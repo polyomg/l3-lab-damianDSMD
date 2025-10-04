@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab3 Menu</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 40px; }
+        h1 { margin-bottom: 30px; }
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<h1>Lab 3 - Thymeleaf Demo</h1>
+
+<a class="btn" th:href="@{/staff/detail}">Staff Detail</a>
+<a class="btn" th:href="@{/staff/list}">Staff List</a>
+<a class="btn" th:href="@{/staff/status}">List Status</a>
+<a class="btn" th:href="@{/staff/controls}">List Controls</a>
+
+</body>
+</html>

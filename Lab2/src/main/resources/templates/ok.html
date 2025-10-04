@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<form action="/ctrl/ok" method="post">
+    <button>OK 1 (POST)</button>
+    <button formmethod="get">OK 2 (GET)</button>
+    <button formaction="/ctrl/ok?x=1">OK 3 (Param)</button>
+</form>
+
+<hr>
+
+<p><b>HTTP Method:</b> <span th:text="${method}"></span></p>
+<p><b>URI hiện tại:</b> <span th:text="${uri}"></span></p>
+<p th:if="${paramX != null}">
+    <b>Giá trị x:</b> <span th:text="${paramX}"></span>
+</p>
+
+</body>
+</html>

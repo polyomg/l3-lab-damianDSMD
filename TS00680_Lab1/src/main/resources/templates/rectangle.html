@@ -1,0 +1,15 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Rectangle</title>
+</head>
+<body>
+<form action="/rectangle/calc" method="post">
+    <input type="number" name="width" placeholder="Width" />
+    <input type="number" name="height" placeholder="Height" />
+    <button type="submit">Calculate</button>
+</form>
+
+<p th:text="${message}"></p>
+</body>
+</html>
