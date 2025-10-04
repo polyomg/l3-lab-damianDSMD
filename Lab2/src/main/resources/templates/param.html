@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<ul>
+    <li><a href="/param/request-param?name=An">Truyền dữ liệu qua RequestParam (?name=An)</a></li>
+    <li><a href="/param/path/Binh">Truyền dữ liệu qua PathVariable (/path/Binh)</a></li>
+    <li><a href="/param/multi?name=Chi&age=21">Truyền nhiều tham số (?name=Chi&age=21)</a></li>
+</ul>
+
+<hr>
+<p><b>Kết quả:</b> <span th:text="${message}"></span></p>
+
+</body>
+</html>

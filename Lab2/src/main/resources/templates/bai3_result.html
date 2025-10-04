@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<p th:text="${message}"></p>
+<hr>
+<ul>
+    <li><b>Tên:</b> <span th:text="${savedProduct.name}"></span></li>
+    <li><b>Giá:</b> <span th:text="${savedProduct.price}"></span></li>
+    <li><b>Số lượng:</b> <span th:text="${savedProduct.quantity}"></span></li>
+</ul>
+
+<p><a href="/product/form">Nhập sản phẩm khác</a></p>
+
+</body>
+</html>
