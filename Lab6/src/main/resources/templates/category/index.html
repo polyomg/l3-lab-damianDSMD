@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Category Management</title>
+</head>
+<body>
+<h2>CATEGORY MANAGEMENT</h2>
+
+<!-- include form -->
+<th:block th:replace="~{category/_form :: form}"></th:block>
+<hr>
+
+<!-- include table -->
+<th:block th:replace="~{category/_table :: table}"></th:block>
+
+</body>
+</html>
