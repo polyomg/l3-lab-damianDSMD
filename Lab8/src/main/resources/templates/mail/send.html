@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Send Mail</title></head>
+<body>
+<h2>Send Mail</h2>
+<p th:text="${message}"></p>
+
+<form action="/mail/send-direct" method="post">
+    <h3>Send Direct</h3>
+    To: <input name="to"/><br/>
+    Subject: <input name="subject"/><br/>
+    Body: <textarea name="body"></textarea><br/>
+    <button type="submit">Send Direct</button>
+</form>
+
+<form action="/mail/send-queue" method="post">
+    <h3>Push to Queue</h3>
+    To: <input name="to"/><br/>
+    Subject: <input name="subject"/><br/>
+    Body: <textarea name="body"></textarea><br/>
+    <button type="submit">Push to Queue</button>
+</form>
+
+<p><a th:href="@{/}">Back</a></p>
+</body>
+</html>
