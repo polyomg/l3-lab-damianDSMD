@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<p><b>Model message:</b> <span th:text="${message}">model msg</span></p>
+<p><b>Param message:</b> <span th:text="${param.message}">param msg</span></p>
+
+<hr>
+<nav>
+    <a href="/result5/b">Go to B (forward)</a><br>
+    <a href="/result5/c">Go to C (redirect)</a><br>
+    <a href="/result5/d">Go to D (response body)</a><br>
+</nav>
+</body>
+</html>
